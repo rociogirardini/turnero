@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#caja{
+    background-color: #3333;
+    border: 2px solid rgba(145, 136, 136, 0.2);
+    width: 500px;
+    height: 200px;
+    margin: 5px 0px 50px 50px;
+    display: none;
+}
+.infoUsuario{
+    margin: 3vh
+}
+.alertText{
+    color: white;
+    background-color: #dc3545;
+    border-radius: 15px;
+    height: 50px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+}
+#envioExitoso p{
+    color: white;
+    background-color: #198754;
+    border-radius: 15px;
+    height: 50px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+}
+.navbar-color{
+    background-color: rgba(51,91,94,0.8);
+}
+.bntAlTurno{
+    color:white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+ul,ol{
+    list-style: none;
+    padding-left: 0rem;
+}
+.seccionPrincipal{
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    position: relative;
+}
+.slider li{
+    width: 100%;
+}
+.slider ul{
+    width: 100%;
+}
+.slider li img{
+    width: 100%;
+}
+.slider .caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color:white;
+    padding: 15px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.pagination{
+    position: absolute;
+    top: 90%;
+    width:100%;
+    justify-content: center;
+}
+.pagination li {
+    margin: 0px 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+.left, .right{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+.left{
+    left: 10px
+}
+.right{
+    right: 10px;
+}
+
+/* ESTILO DEL TURNERO */
+.tituloPages{
+    font-family: 'Oswald', sans-serif;
+}
+.encabezadoPages{
+    background-image: url(../media/calendario.jpg);
+    height: 25vh;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.fondoPages{
+    background-color: #e9eff0 ;
+}
+#formTurno{
+    margin: 3vh
+}
+@media screen and (max-width: 600px){
+    .slider .caption p{
+        display: none;
+    }
+    .slider .caption h1,h2{
+        font-size: 20px;
+    }
+    .right img{
+        width: 25px;
+    }
+    .left img{
+        width: 25px;
+    }
+    .pagination{
+        top: 80%
+    }
+}
