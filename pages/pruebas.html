@@ -21,3 +21,38 @@
     transform: translate(-50%,-50%);
 }*/
 
+
+&& validar2(textHora, JSON.parse(localStorage.getItem('horariosOcupados')))
+
+
+
+let horariosNoDisponibles = JSON.parse(localStorage.getItem('horariosOcupados'));
+// Validar ocupación de turnos
+let ocupacion = validar2(textHora, horariosNoDisponibles);
+if (!ocupacion) {
+    return;
+}
+horariosNoDisponibles.push(textHora);
+horariosNoDisponibles = JSON.stringify(horariosNoDisponibles);
+localStorage.setItem('horariosOcupados', horariosNoDisponibles);
+
+function infoLocalStorage() {
+    if (!localStorage.getItem("horariosOcupados")) {
+        localStorage.setItem("horariosOcupados", "[]");
+    }
+    if (!localStorage.getItem("fechasOcupadas")) {
+        localStorage.setItem("fechasOcupadas", "[]");
+    }
+}
+
+
+
+function validar2(horas, horasOcupadas) {
+    let hDisponible = horasOcupadas.find(h => h == horas);
+    if (hDisponible) {
+        $('#alerta').append("<p class='alertText'>La hora seleccionada está ocupada</p>");
+        alertas(1, 'alerta');
+        return false
+    }
+    return true
+}
