@@ -1,5 +1,5 @@
-# Turnero
-Repositorio del proyecto de sitio web para un centro quiropráctico, incluyendo la funcionalidad especial de un turnero.
+# Turnero 
+Proyecto de sitio web para centro quiropráctico, incluyendo turnero.
 ## Objetivo
 
 Proyecto final para curso de JavaScript en CoderHouse, a cargo del profesor Javier Verón.
