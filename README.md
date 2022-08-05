@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/rociogirardini/turnero/">
-    <img src="./public/turnero_logo.png" alt="Logo" height="80">
+    <img src="./media/logo.png" alt="Logo" height="80">
   </a>
 
 <h3 align="center">Appointment site</h3>
@@ -36,7 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="./public/turnero_preview.png" alt="Project preview" align="center">
+<img src="./media/turnero_preview.png" alt="Project preview" align="center">
 
 
 ### Built With
