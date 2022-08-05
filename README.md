@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/rociogirardini/turnero/">
-    <img src="./media/logo.png" alt="Logo" height="80">
+    <img src="./media/turnero.png" alt="Logo" height="80">
   </a>
 
 <h3 align="center">Appointment site</h3>
